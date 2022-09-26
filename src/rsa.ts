@@ -109,7 +109,7 @@ export class RSAKey {
 
   // Set the private key fields N, e, and d from hex strings
   setPrivate(N: string, E: string, D: string): void {
-    if (!N && !E && N.length > 0 && E.length > 0) {
+    if (N && E && N.length > 0 && E.length > 0) {
       this.n = parseBigInt(N, 16)
       this.e = parseInt(E, 16)
       this.d = parseBigInt(D, 16)
@@ -127,7 +127,7 @@ export class RSAKey {
     DQ: string,
     C: string,
   ): void {
-    if (!N && !E && N.length > 0 && E.length > 0) {
+    if (N && E && N.length > 0 && E.length > 0) {
       this.n = parseBigInt(N, 16)
       this.e = parseInt(E, 16)
       this.d = parseBigInt(D, 16)

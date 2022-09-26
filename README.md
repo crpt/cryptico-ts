@@ -1,5 +1,11 @@
 # cryptico
 
+> Forked from [crpt/cryptico](https://github.com/crpt/cryptico).
+
+Includes fix to [Fix RSAKey deserialization](https://github.com/veikkos/cryptico/commit/40664350344d547d886717dfb84d5afd6027946e).
+
+## Original README
+
 > Forked from [cryptico](https://github.com/tracker1/cryptico-js), ported to ES modules and TypeScript.
 
 ## Install
